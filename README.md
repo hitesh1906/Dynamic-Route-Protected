@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Simple Routing app with a protected route
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>First run the project using the command <i>`npm start`</i> </h3>
+Open (http://localhost:3000) to view it in your browser.
 
-## Available Scripts
+Basically in this Project, there are 3 routes:
+1. /  --> Protected Route
+2. /dashboard --> Protected Route
+3. /login --> Not protected Route
 
-In the project directory, you can run:
+So, 2 routes are protected i.e. "/" & "/dashboard".
 
-### `npm start`
+ByDefault our project renders the "/login" route as it is not protected.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![WhatsApp Image 2024-01-02 at 23 22 32_9d3f2d62](https://github.com/hitesh1906/Dynamic-Route-Protected/assets/76858968/5a30b319-991b-4f95-bd96-8dca540060f8)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2>Now inspect and add the token in local storage see the below image </h2>
 
-### `npm test`
+![WhatsApp Image 2024-01-02 at 23 20 21_02cb0d34](https://github.com/hitesh1906/Dynamic-Route-Protected/assets/76858968/545452c1-9a81-437c-86d1-c2c1e62786d2)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h3>After adding a "token" you will be able to see something like this-</h3>
 
-### `npm run build`
+![WhatsApp Image 2024-01-02 at 23 21 11_2da7cfb5](https://github.com/hitesh1906/Dynamic-Route-Protected/assets/76858968/9518e3cc-9785-48b3-b455-64f762d77431)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h3>Now try to navigate to other routes which are "/dashboard" & "/" if the token is valid then you will be able to see the content of that route otherwise you will be redirected to the login route.</h3>
